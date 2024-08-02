@@ -17,6 +17,7 @@ body {
 .comments {
   font-size: 30px;
   height: 100px;
+  text-align: center;
 }
 
 .score {
