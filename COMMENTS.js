@@ -17,10 +17,10 @@ const COMMENTS = [
   { score: 2000, comment: "Keep up the pace!" },
   { score: 2200, comment: "You’re a legend on the battlefield!" },
   {
-    score: 2400,
+    score: 2500,
     comment: "Great job! You’re about to advance to the next level.",
   },
-  { score: 2600, comment: "Level 2 unlocked! Keep going, soldier!" },
+  { score: 2500, comment: "Level 2 unlocked! Keep going, soldier!" },
   { score: 2800, comment: "Excellent! You’re showing great skill!" },
   { score: 3000, comment: "Keep eliminating enemies! Victory is near!" },
   { score: 3200, comment: "Great! You’re advancing quickly." },

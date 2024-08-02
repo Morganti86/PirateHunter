@@ -20,6 +20,27 @@ body {
   text-align: center;
 }
 
+.level {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+  width: 80px;
+  text-align: center;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo semitransparente para mejor visibilidad */
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+
 .score {
   position: absolute;
   top: 20px;
@@ -36,7 +57,7 @@ body {
   ); /* Fondo semitransparente para mejor visibilidad */
   padding: 5px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
 }
 
@@ -53,6 +74,7 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
   border-radius: 20px;
+  cursor: crosshair;
 }
 
 .npcs {
@@ -61,6 +83,8 @@ body {
   position: absolute;
   bottom: 10px;
   transform: translateX(-380px);
+  animation-name: npcs;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
   background-size: cover;
 }
