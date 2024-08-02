@@ -32,7 +32,7 @@ function handleEnemyClick(event) {
   setTimeout(() => {
     npc.style.visibility = "hidden";
     checkPosition(npc);
-  }, 800);
+  }, 200);
 
   refreshScore(score);
 }
