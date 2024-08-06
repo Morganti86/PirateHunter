@@ -2,7 +2,7 @@ const NPCS = [
   {
     id: 1,
     name: "enemy1",
-    backgroundImage: "kamikaze.gif",
+    backgroundImage: "a.gif",
     speed: "5s",
     delay: "1s",
     points: 1000,
@@ -10,15 +10,15 @@ const NPCS = [
   {
     id: 2,
     name: "enemy2",
-    backgroundImage: "momia.gif",
-    speed: "7s",
+    backgroundImage: "d.gif",
+    speed: "5s",
     delay: "3s",
     points: 1000,
   },
   {
     id: 3,
     name: "enemy3",
-    backgroundImage: "zombi.gif",
+    backgroundImage: "c.gif",
     speed: "6s",
     delay: "5s",
     points: 1000,
@@ -26,7 +26,7 @@ const NPCS = [
   {
     id: 4,
     name: "enemy4",
-    backgroundImage: "zombi.gif",
+    backgroundImage: "x.gif",
     speed: "3s",
     delay: "6s",
     points: 1000,
