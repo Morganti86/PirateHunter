@@ -16,8 +16,12 @@ body {
 
 .comments {
   font-size: 30px;
-  height: 100px;
+  min-height: 100px;
   text-align: center;
+}
+
+.footer {
+  font-size: 20px;
 }
 
 .level {
@@ -39,7 +43,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
 }
-
 
 .score {
   position: absolute;
@@ -64,9 +67,10 @@ body {
 .screen {
   width: 600px;
   height: 280px;
-  background-image: url("images/1.jpg");
+  background-image: url("images/1.webp");
   background-position: bottom;
   background-size: cover;
+  transition: all 0s ease-out;
   position: relative;
   display: flex;
   justify-content: center;
@@ -78,8 +82,8 @@ body {
 }
 
 .npcs {
-  width: 80px;
-  height: 80px;
+  width: 85px;
+  height: 85px;
   position: absolute;
   bottom: 10px;
   transform: translateX(-380px);
@@ -96,5 +100,36 @@ body {
 
   100% {
     transform: translateX(330px);
+  }
+}
+
+@media (max-width: 500px) {
+  .screen {
+    width: 350px;
+    height: 400px;
+  }
+
+  .npcs {
+    width: 60px;
+    height: 60px;
+  }
+
+  .level {
+    font-size: 15px;
+    width: 60px;
+  }
+
+  .score {
+    font-size: 15px;
+    width: 100px;
+  }
+
+  .comments {
+    font-size: 20px;
+    min-height: 70px;
+  }
+
+  .footer {
+    font-size: 15px;
   }
 }
