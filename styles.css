@@ -14,13 +14,8 @@ body {
   font-size: 50px;
 }
 
-.comments {
-  font-size: 30px;
-  min-height: 100px;
-  text-align: center;
-}
-
 .footer {
+  margin-top: 50px;
   font-size: 20px;
 }
 
@@ -67,7 +62,8 @@ body {
 .screen {
   width: 600px;
   height: 280px;
-  background-image: url("images/1.webp");
+  /* background-image: url("images/1.webp"); */
+  background-color: black;
   background-position: bottom;
   background-size: cover;
   transition: all 0s ease-out;
@@ -91,6 +87,35 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   background-size: cover;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.play {
+  border: none;
+  font-family: "VT323", monospace;
+  color: white;
+  background-color: black;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.comments {
+  font-size: 30px;
+  text-align: center;
+  white-space: pre-line;
 }
 
 @keyframes npcs {
@@ -124,12 +149,22 @@ body {
     width: 100px;
   }
 
+  .container {
+    height: 100px;
+  }
+
+  .play {
+    margin-top: 100px;
+    font-size: 50px;
+  }
+
   .comments {
     font-size: 20px;
     min-height: 70px;
   }
 
   .footer {
+    margin-top: 20px;
     font-size: 15px;
   }
 }

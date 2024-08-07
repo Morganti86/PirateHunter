@@ -1,5 +1,10 @@
 let score = 0;
-let levelActual = 1;
+let levelActual = 0;
+
+let start = document.querySelector(".play");
+start.addEventListener("click", play);
+
+let logo = document.querySelector(".logo");;
 
 let screen = document.querySelector(".screen");
 let scorePanel = document.querySelector(".score");
@@ -7,7 +12,15 @@ let levelPanel = document.querySelector(".level");
 let commentsPanel = document.querySelector(".comments");
 const bomb = "bomb.gif";
 
-createEnemies();
+function play() {
+  logo.style.visibility = "hidden";
+  start.style.display = "none";
+  refreshScore(score);
+  refreshLevel(score);
+  refreshComment(score);
+  playMusic();
+  createEnemies();
+}
 
 function createEnemies() {
   NPCS.forEach((NPC) => {
@@ -76,7 +89,9 @@ function refreshComment(score) {
     .find((c) => score >= c.score);
 
   if (comment) {
-    commentsPanel.textContent = comment.comment;
+    // commentsPanel.textContent = comment.comment;
+    // cambiamos para que funcionen los saltos de linea
+    commentsPanel.innerHTML = comment.comment;
   }
 }
 
@@ -90,4 +105,11 @@ function refreshLevel(score) {
     screen.style.backgroundImage = `url('./images/${level.background}')`;
     levelActual = level.level;
   }
+}
+
+function playMusic() {
+  let music = new Audio("sounds/music.mp3");
+  music.volume = 0.2;
+  music.loop = true;
+  music.play();
 }
