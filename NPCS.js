@@ -5,7 +5,7 @@ const NPCS = [
     backgroundImage: "pirate1.gif",
     speed: "5s",
     delay: "1s",
-    points: 1000,
+    points: 30,
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const NPCS = [
     backgroundImage: "pirate2.gif",
     speed: "5s",
     delay: "3s",
-    points: 1000,
+    points: 50,
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const NPCS = [
     backgroundImage: "pirate3.gif",
     speed: "6s",
     delay: "5s",
-    points: 1000,
+    points: 80,
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const NPCS = [
     backgroundImage: "pirate4.gif",
     speed: "3s",
     delay: "8s",
-    points: 1000,
+    points: 100,
   },
   {
     id: 5,
@@ -37,6 +37,6 @@ const NPCS = [
     backgroundImage: "innocent1.gif",
     speed: "3s",
     delay: "6s",
-    points: 1000,
+    points: 0,
   },
 ];
