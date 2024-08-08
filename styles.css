@@ -6,8 +6,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "VT323", monospace;
+  overflow-x: hidden;
 }
 
 .title {
@@ -166,7 +167,46 @@ body {
   }
 
   .footer {
-    margin-top: 20px;
     font-size: 15px;
+  }
+}
+
+/* Ajustes específicos para orientación horizontal */
+@media (orientation: landscape) {
+  .screen {
+    max-width: 80vw; /* Asegúrate de usar toda la vista del ancho */
+    height: 260px; /* Ajusta la altura si es necesario */
+  }
+
+  .npcs {
+    width: 70px;
+    height: 70px;
+  }
+
+  .level {
+    font-size: 12px;
+    width: 50px;
+  }
+
+  .score {
+    font-size: 12px;
+    width: 90px;
+  }
+
+  .container {
+    height: 60px; /* Ajusta la altura si es necesario */
+  }
+
+  .play {
+    font-size: 40px; /* Ajusta el tamaño de la fuente si es necesario */
+  }
+
+  .comments {
+    font-size: 18px; /* Ajusta el tamaño de la fuente si es necesario */
+  }
+
+  .footer {
+    margin-top: 30px;
+    font-size: 12px;
   }
 }
