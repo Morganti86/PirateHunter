@@ -167,6 +167,7 @@ body {
   }
 
   .footer {
+    margin-top: 30px;
     font-size: 15px;
   }
 }
@@ -174,8 +175,8 @@ body {
 /* Ajustes específicos para orientación horizontal */
 @media (orientation: landscape) {
   .screen {
-    max-width: 80vw; /* Asegúrate de usar toda la vista del ancho */
-    height: 260px; /* Ajusta la altura si es necesario */
+    max-width: 80vw; 
+    height: 260px;
   }
 
   .npcs {
@@ -184,29 +185,29 @@ body {
   }
 
   .level {
-    font-size: 12px;
-    width: 50px;
+    font-size: 15px;
+    width: 60px;
   }
 
   .score {
-    font-size: 12px;
-    width: 90px;
+    font-size: 15px;
+    width: 100px;
   }
 
   .container {
-    height: 60px; /* Ajusta la altura si es necesario */
+    height: 80px;
   }
 
   .play {
-    font-size: 40px; /* Ajusta el tamaño de la fuente si es necesario */
+    font-size: 50px;
   }
 
   .comments {
-    font-size: 18px; /* Ajusta el tamaño de la fuente si es necesario */
+    font-size: 20px;
   }
 
   .footer {
     margin-top: 30px;
-    font-size: 12px;
+    font-size: 15px;
   }
 }
