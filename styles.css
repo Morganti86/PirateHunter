@@ -103,6 +103,10 @@ body {
   height: 100px;
 }
 
+.message {
+  margin-top: 25px;
+}
+
 .play {
   border: none;
   font-family: "VT323", monospace;
@@ -150,17 +154,15 @@ body {
   }
 
   .container {
-    height: 100px;
+    height: 80px;
   }
 
   .play {
-    margin-top: 100px;
     font-size: 50px;
   }
 
   .comments {
     font-size: 20px;
-    min-height: 70px;
   }
 
   .footer {
