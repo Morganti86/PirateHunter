@@ -79,8 +79,8 @@ body {
 }
 
 .npcs {
-  width: 85px;
-  height: 85px;
+  width: 80px;
+  height: 80px;
   position: absolute;
   bottom: 10px;
   transform: translateX(-380px);
@@ -140,8 +140,8 @@ body {
   }
 
   .npcs {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
   }
 
   .level {
@@ -179,10 +179,10 @@ body {
     height: 260px;
   }
 
-  .npcs {
+  /* .npcs {
     width: 70px;
     height: 70px;
-  }
+  } */
 
   .level {
     font-size: 15px;
