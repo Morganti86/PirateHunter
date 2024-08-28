@@ -16,7 +16,7 @@ body {
 }
 
 .title {
-  font-size: 50px;
+  font-size: 55px;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black;
 }
@@ -74,17 +74,18 @@ body {
   width: 550px;
   height: 280px;
   /* background-image: url("images/background.webp"); */
-  background-color: black;
+  background-color: transparent;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  visibility: hidden;
+  /* visibility: hidden; */
   transition: all 0s ease-out;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   overflow-x: hidden;
+  overflow-y: hidden;
   box-sizing: border-box;
   border-radius: 20px;
   cursor: crosshair;
@@ -108,7 +109,7 @@ body {
 } */
 
 .container {
-  margin-top: 10px;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -117,7 +118,10 @@ body {
 }
 
 .message {
+  font-size: 25px;
   margin-top: 25px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .play {
@@ -125,7 +129,7 @@ body {
   font-family: "VT323", monospace;
   color: white;
   background-color: transparent;
-  font-size: 50px;
+  font-size: 65px;
   cursor: pointer;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black;
@@ -173,7 +177,7 @@ body {
   }
 
   .play {
-    font-size: 50px;
+    font-size: 65px;
   }
 
   .comments {
@@ -213,7 +217,7 @@ body {
   }
 
   .play {
-    font-size: 50px;
+    font-size: 80px;
   }
 
   .comments {

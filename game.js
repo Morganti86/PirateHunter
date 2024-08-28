@@ -84,7 +84,7 @@ function retry(text) {
   body.style.backgroundRepeat = "no-repeat";
   start.textContent = "RETRY";
   start.style.display = "block";
-  screen.style.visibility = "hidden";
+  // screen.style.visibility = "hidden";
   scorePanel.style.visibility = "hidden";
   levelPanel.style.visibility = "hidden";
   commentsPanel.textContent = "";
