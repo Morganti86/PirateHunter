@@ -7,6 +7,7 @@ const pirateEscaped = "PIRATE ESCAPED";
 const music = new Audio("sounds/music.mp3");
 
 // let logo = document.querySelector(".logo");
+let body = document.querySelector(".body");
 let start = document.querySelector(".play");
 start.addEventListener("click", play);
 
@@ -20,8 +21,10 @@ let commentsPanel = document.querySelector(".comments");
 
 function play() {
   // logo.style.visibility = "hidden";
+  body.style.background = "black";
   start.style.display = "none";
   message.textContent = "";
+  screen.style.visibility = "visible";
   scorePanel.style.visibility = "visible";
   levelPanel.style.visibility = "visible";
   refreshScore(score);
@@ -75,8 +78,13 @@ function retry(text) {
   screen.style.background = initialScreenBackground;
   // logo.style.visibility = "visible";
   message.textContent = text;
+  body.style.backgroundImage = `url('./images/background.webp')`;
+  body.style.backgroundSize = "cover";
+  body.style.backgroundPosition = "bottom";
+  body.style.backgroundRepeat = "no-repeat";
   start.textContent = "RETRY";
   start.style.display = "block";
+  screen.style.visibility = "hidden";
   scorePanel.style.visibility = "hidden";
   levelPanel.style.visibility = "hidden";
   commentsPanel.textContent = "";

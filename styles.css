@@ -1,5 +1,9 @@
 body {
-  background-color: black;
+  /* background-color: black; */
+  background-image: url("images/background.webp");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
   color: white;
   margin: 0;
   display: flex;
@@ -13,11 +17,15 @@ body {
 
 .title {
   font-size: 50px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .footer {
   margin-top: 50px;
   font-size: 20px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .level {
@@ -65,11 +73,12 @@ body {
 .screen {
   width: 550px;
   height: 280px;
-  background-image: url("images/d.jpg");
-  /* background-color: black; */
+  /* background-image: url("images/background.webp"); */
+  background-color: black;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  visibility: hidden;
   transition: all 0s ease-out;
   position: relative;
   display: flex;
@@ -115,9 +124,11 @@ body {
   border: none;
   font-family: "VT323", monospace;
   color: white;
-  background-color: black;
+  background-color: transparent;
   font-size: 50px;
   cursor: pointer;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .comments {
