@@ -6,7 +6,7 @@ const innocentKilled = "INNOCENT KILLED";
 const pirateEscaped = "PIRATE ESCAPED";
 const music = new Audio("sounds/music.mp3");
 
-let logo = document.querySelector(".logo");
+// let logo = document.querySelector(".logo");
 let start = document.querySelector(".play");
 start.addEventListener("click", play);
 
@@ -19,7 +19,7 @@ let levelPanel = document.querySelector(".level");
 let commentsPanel = document.querySelector(".comments");
 
 function play() {
-  logo.style.visibility = "hidden";
+  // logo.style.visibility = "hidden";
   start.style.display = "none";
   message.textContent = "";
   scorePanel.style.visibility = "visible";
@@ -73,7 +73,7 @@ function retry(text) {
   score = 0;
   levelActual = 0;
   screen.style.background = initialScreenBackground;
-  logo.style.visibility = "visible";
+  // logo.style.visibility = "visible";
   message.textContent = text;
   start.textContent = "RETRY";
   start.style.display = "block";

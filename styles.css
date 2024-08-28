@@ -28,6 +28,7 @@ body {
   font-size: 20px;
   width: 80px;
   text-align: center;
+  visibility: hidden;
   background-color: rgba(
     0,
     0,
@@ -48,6 +49,7 @@ body {
   font-size: 20px;
   width: 135px;
   text-align: center;
+  visibility: hidden;
   background-color: rgba(
     0,
     0,
@@ -61,12 +63,13 @@ body {
 }
 
 .screen {
-  width: 600px;
+  width: 550px;
   height: 280px;
-  /* background-image: url("images/1.webp"); */
-  background-color: black;
-  background-position: bottom;
+  background-image: url("images/d.jpg");
+  /* background-color: black; */
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   transition: all 0s ease-out;
   position: relative;
   display: flex;
@@ -79,8 +82,8 @@ body {
 }
 
 .npcs {
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   position: absolute;
   bottom: 10px;
   transform: translateX(-380px);
@@ -90,10 +93,10 @@ body {
   background-size: cover;
 }
 
-.logo {
+/* .logo {
   width: 200px;
   height: 200px;
-}
+} */
 
 .container {
   margin-top: 10px;
@@ -168,14 +171,14 @@ body {
 
   .footer {
     margin-top: 30px;
-    font-size: 15px;
+    font-size: 25px;
   }
 }
 
 /* Ajustes específicos para orientación horizontal */
 @media (orientation: landscape) {
   .screen {
-    max-width: 80vw; 
+    max-width: 80vw;
     height: 260px;
   }
 
@@ -208,6 +211,6 @@ body {
 
   .footer {
     margin-top: 30px;
-    font-size: 15px;
+    font-size: 20px;
   }
 }
