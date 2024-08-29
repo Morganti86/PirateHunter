@@ -16,14 +16,15 @@ body {
 }
 
 .title {
-  font-size: 55px;
+  font-size: 85px;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black;
+  text-align: center;
 }
 
 .footer {
-  margin-top: 50px;
-  font-size: 20px;
+  margin: 10px 0;
+  font-size: 30px;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black;
 }
@@ -152,6 +153,9 @@ body {
 }
 
 @media (max-width: 500px) {
+  .title {
+    font-size: 50px;
+  }
   .screen {
     width: 350px;
     height: 200px;
@@ -185,13 +189,16 @@ body {
   }
 
   .footer {
-    margin-top: 30px;
-    font-size: 25px;
+    margin: 20px 0;
+    font-size: 20px;
   }
 }
 
 /* Ajustes específicos para orientación horizontal */
 @media (orientation: landscape) {
+  .title {
+    font-size: 85px;
+  }
   .screen {
     max-width: 80vw;
     height: 260px;
@@ -225,7 +232,7 @@ body {
   }
 
   .footer {
-    margin-top: 30px;
-    font-size: 20px;
+    margin: 10px 0;
+    font-size: 25px;
   }
 }
